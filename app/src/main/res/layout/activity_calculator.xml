@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalculatorActivity">
+
+    <EditText
+        android:id="@+id/number1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/n_mero_1"
+        android:inputType="numberDecimal"
+        android:textColorHint="#8D6E63"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/number2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/n_mero_2"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="+"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/substractButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="-"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="*"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/divButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="/"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/reset" />
+</LinearLayout>
