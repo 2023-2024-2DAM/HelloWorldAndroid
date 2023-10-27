@@ -1,9 +1,8 @@
 package com.example.helloworld
 
-import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.helloworld.databinding.ActivityCalculatorBinding
 
 class CalculatorActivity : AppCompatActivity() {
