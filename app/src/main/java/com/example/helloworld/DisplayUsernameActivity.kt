@@ -17,9 +17,12 @@ class DisplayUsernameActivity : AppCompatActivity() {
         binding = ActivityDisplayUsernameBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val username = intent.getStringExtra(Params.USERNAME.name)
+        val username = this.intent.getStringExtra(Params.USERNAME.name)
 
-            binding.usernameTextView.text = username
+        binding.usernameTextView.text = username
 
+        binding.returnButton.setOnClickListener {
+            finish()
+        }
     }
 }

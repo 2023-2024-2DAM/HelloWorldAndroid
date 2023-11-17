@@ -21,17 +21,17 @@ class UsernameActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             } else {
-                val intent = Intent(
+                val diplayIntent = Intent(
                     this,
                     DisplayUsernameActivity::class.java
                 )
 
-                intent.putExtra(
+                diplayIntent.putExtra(
                     DisplayUsernameActivity.Params.USERNAME.name,
                     binding.usernameEditText.text.toString()
                 )
 
-                startActivity(intent)
+                startActivity(diplayIntent)
             }
 
 
