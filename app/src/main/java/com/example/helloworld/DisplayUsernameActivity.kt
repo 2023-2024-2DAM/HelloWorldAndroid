@@ -19,7 +19,12 @@ class DisplayUsernameActivity : AppCompatActivity() {
 
         val username = this.intent.getStringExtra(Params.USERNAME.name)
 
-        binding.usernameTextView.text = username
+        username?.let{ username ->
+            binding.usernameTextView.text = username
+        }
+
+
+
 
         binding.returnButton.setOnClickListener {
             finish()

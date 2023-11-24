@@ -13,6 +13,8 @@ class UsernameActivity : AppCompatActivity() {
         binding = ActivityUsernameBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val username = binding.usernameEditText.text.toString()
+
         binding.openDisplayUsernameActivityButton.setOnClickListener {
             if(binding.usernameEditText.text.isEmpty()) {
                 Toast.makeText(
@@ -28,7 +30,7 @@ class UsernameActivity : AppCompatActivity() {
 
                 diplayIntent.putExtra(
                     DisplayUsernameActivity.Params.USERNAME.name,
-                    binding.usernameEditText.text.toString()
+                    username
                 )
 
                 startActivity(diplayIntent)
